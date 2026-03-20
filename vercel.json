@@ -1,7 +1,8 @@
 {
   "functions": {
-    "api/quote.py": {
-      "maxDuration": 20
+    "api/**/*.py": {
+      "maxDuration": 20,
+      "runtime": "python3.12"
     }
   },
   "rewrites": [
