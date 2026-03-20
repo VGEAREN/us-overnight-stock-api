@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "api/quote.py": {
+      "maxDuration": 20
+    }
+  },
+  "rewrites": [
+    { "source": "/", "destination": "/api/quote" }
+  ]
+}
