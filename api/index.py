@@ -23,10 +23,10 @@ JINA = "https://r.jina.ai"
 TRADINGVIEW_BOATS_URL = "https://www.tradingview.com/symbols/BOATS-{symbol}/"
 
 # 缓存配置
-QUOTE_CACHE_TTL = 30       # 报价缓存 30 秒
-FEED_ID_CACHE_TTL = 86400  # feed ID 缓存 24 小时（几乎不变）
-CDN_MAXAGE = 15            # Vercel CDN 边缘缓存 15 秒
-CDN_SWR = 45               # stale-while-revalidate 45 秒
+QUOTE_CACHE_TTL = 5         # 报价缓存 5 秒
+FEED_ID_CACHE_TTL = 86400   # feed ID 缓存 24 小时（几乎不变）
+CDN_MAXAGE = 5              # Vercel CDN 边缘缓存 5 秒
+CDN_SWR = 5                 # stale-while-revalidate 5 秒
 
 # Upstash Redis 配置（从环境变量读取，可选）
 UPSTASH_REDIS_URL = os.environ.get("UPSTASH_REDIS_REST_URL", "")
